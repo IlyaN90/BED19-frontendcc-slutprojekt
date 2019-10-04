@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #e0e0e0;
+}
+section.lightbox-container{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hide{
+    display: none !important;
+}
+
+section.lightbox-container img{
+    max-height: 90%;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #f0f0f0;
+}
+
+header section{
+    margin-right: auto;
+    display: flex;
+}
+
+header section input{
+    margin: .2rem;
+    padding: .4rem;
+    font-size: inherit;
+}
+
+header section button{
+    margin: .2rem;
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+header  select{
+    margin: .2rem;
+    font-size: inherit;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background: #e9e9e9;
+}
+
+footer{
+    width: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+footer a{
+    margin: .5rem;
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #f0f0f0;
+    background: #3e3e3e;
+}
+
+footer a:hover{
+    background: #4e4e4e;
+}
+
+footer #previous-page{
+    margin-left: auto;
+}
+
+footer #next-page{
+    margin-right: auto;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 810px){
+    header{
+        flex-direction: column;
+    }
+    header select{
+        margin-right: auto;
+    }
+    main{
+        grid-template-columns: repeat(4, 1fr)
+    }
+    @media screen and (max-width: 650px){
+        main{
+            grid-template-columns: repeat(3, 1fr)
+        }
+        @media screen and (max-width: 490px){
+            header{
+                font-size: 1rem;
+            }
+            main{
+                grid-template-columns: repeat(2, 1fr)
+            }
+            @media screen and (max-width: 330px){
+                main{
+                    grid-template-columns: 1fr
+                }
+            }
+        }
+    }
+}

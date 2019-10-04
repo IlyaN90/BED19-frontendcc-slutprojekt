@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flickr Feed</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="lightbox-container hide">
+        <img src="" alt="">
+    </section>
+    <header>
+        <section>
+            <input type="text" id='search-text'>
+            <button id="search-button"><ion-icon name="search"></ion-icon></button>
+        </section>
+        <select id="licenses">
+            <option value="">Any License</option>
+            <option value="1">CC NonCommercial-ShareAlike License</option>
+            <option value="2">CC NonCommercial License</option>
+            <option value="3">CC NonCommercial-NoDerivs License</option>
+            <option value="4">CC License</option>
+            <option value="5">CC ShareAlike License</option>
+            <option value="6">CC NoDerivs License</option>
+        </select>
+        <select id="imgs-per-page">
+            <option value="10">10 images</option>
+            <option value="25">25 images</option>
+            <option value="50">50 images</option>
+        </select>
+    </header>
+    <main class="hide">
+    </main>
+    <footer class="hide">
+        <a href="#" id='previous-page'><ion-icon name="arrow-dropleft-circle"></ion-icon></a>
+        <section></section>
+        <a href="#" id='next-page'><ion-icon name="arrow-dropright-circle"></ion-icon></a>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
