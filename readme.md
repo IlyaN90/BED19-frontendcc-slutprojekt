@@ -1,3 +1,3 @@
-# BED19-slutprojekt
+# BED19-frontendcc-slutprojekt
 
 Oh no
